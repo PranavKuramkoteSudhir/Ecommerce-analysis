@@ -1,0 +1,39 @@
+# Private project planning and agent context (never publish)
+/.project/
+AGENTS.md
+AGENTS.override.md
+/.pi/
+/.claude/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Generated reports and runtime data; fixtures belong under tests/fixtures
+/reports/
+/runtime/
+/artifacts/
+*.log
+
+# Editor and operating-system noise
+.DS_Store
+.idea/
+.vscode/

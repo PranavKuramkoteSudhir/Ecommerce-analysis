@@ -1,0 +1,9 @@
+[project]
+name = "pulsecart"
+version = "0.0.1"
+description = "Local-first streaming commerce lakehouse"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+# No installable application package exists yet. Dependency locking, linting,
+# type checks, and packaging will be added with the first Python service.
