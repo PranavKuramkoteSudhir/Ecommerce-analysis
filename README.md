@@ -17,13 +17,13 @@ python3.12 scripts/check_foundation.py
 
 Foundation checks run standard-library unit tests, parse Python source for syntax errors, and reject tracked private planning/local-secret paths. They require no installed Python dependencies. This is a path-policy check, not a comprehensive secret scanner.
 
-There is no application startup command yet. Checks on a clean clone do not require private planning files. CI is configured to run the same foundation command on pushes and pull requests; an actual CI result is pending the first code push.
+There is no application startup command yet. Checks on a clean clone do not require private planning files. CI runs the same foundation command on pushes and pull requests. The [initial foundation run passed](https://github.com/PranavKuramkoteSudhir/Ecommerce-analysis/actions/runs/42556841872).
 
 ## Progress
 
 | Stage | Code | Verification | Status |
 |---|---|---|---|
-| S00 Development foundation | Local setup implemented | Local checks passed; commit and GitHub CI pending | In progress |
+| S00 Development foundation | Committed and pushed | Six unit tests, public-only reproduction, and GitHub CI passed | Complete |
 | S01 Local platform feasibility | Not started | Not run | Planned |
 | S02 Account lifecycle | Not started | Not run | Planned |
 | S03 Safe commerce transactions | Not started | Not run | Planned |
