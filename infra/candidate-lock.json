@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-11-10",
+  "status": "partial_metadata_verified_blocked",
+  "runtime_verification": "not_run",
+  "b01_gate": "blocked_effective_classpath_and_execution",
+  "dependency_lock_scope": "candidate_direct_artifacts_not_resolved_build",
+  "images": {
+    "python": {
+      "reference": "python:3.12.16-slim-bookworm",
+      "tag": "3.12.16-slim-bookworm",
+      "index_digest": "sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df",
+      "arm64_digest": "sha256:df540bfd30bd380e89a349611ce42aa67bcb542d58c047706616eb6ba2f86a1b",
+      "pinned_reference": "python:3.12.16-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df",
+      "platform": "linux/arm64",
+      "verification": "registry_metadata_only",
+      "method": "registry_v2_index_and_child_get_sha256",
+      "metadata_url": "https://registry-1.docker.io/v2/library/python/manifests/3.12.16-slim-bookworm",
+      "license": "PSF-2.0 and distribution package licenses"
+    },
+    "postgres": {
+      "reference": "postgres:17.11-bookworm",
+      "tag": "17.11-bookworm",
+      "index_digest": "sha256:665dc7b37ac52a17e298511414c21d23ffa4e6a6ef6225b3e5d59c7afb35e994",
+      "arm64_digest": "sha256:9da3effe923ca751b92343f54bb9a90674895c52975e0bd10efd568d6be49b21",
+      "pinned_reference": "postgres:17.11-bookworm@sha256:665dc7b37ac52a17e298511414c21d23ffa4e6a6ef6225b3e5d59c7afb35e994",
+      "platform": "linux/arm64",
+      "verification": "registry_metadata_only",
+      "method": "registry_v2_index_and_child_get_sha256",
+      "metadata_url": "https://registry-1.docker.io/v2/library/postgres/manifests/17.11-bookworm",
+      "license": "PostgreSQL and distribution package licenses"
+    },
+    "redpanda": {
+      "reference": "docker.redpanda.com/redpandadata/redpanda:v26.2.6",
+      "tag": "v26.2.6",
+      "index_digest": "sha256:8b1076e0d61bfceb66594dc01536427ce0b529f8ead35fdab9763ab6085891ce",
+      "arm64_digest": "sha256:3eb25d827e972b47dd09ce34a1d96c678773aa419c7c530b17c0b31c2be39c5f",
+      "pinned_reference": "docker.redpanda.com/redpandadata/redpanda:v26.2.6@sha256:8b1076e0d61bfceb66594dc01536427ce0b529f8ead35fdab9763ab6085891ce",
+      "platform": "linux/arm64",
+      "verification": "registry_metadata_only",
+      "method": "docker_buildx_imagetools_inspect_index_and_child",
+      "metadata_url": "https://docker.redpanda.com/v2/redpandadata/redpanda/manifests/v26.2.6",
+      "license": "BSL-1.1 community; separate enterprise terms; distribution package licenses",
+      "binary_release_note": "v26.2.6 updates container CA certificates; binaries unchanged from v26.2.5"
+    },
+    "seaweedfs": {
+      "reference": "chrislusf/seaweedfs:4.53",
+      "tag": "4.53",
+      "index_digest": "sha256:ccad23e18639c8b98cee17e7100b95830a06077b56d8e5b006d6dcf8ec5e94a0",
+      "arm64_digest": "sha256:210d0f5999432219ca23f61bf467965869520202d4a820d717a6a6c008b77a41",
+      "pinned_reference": "chrislusf/seaweedfs:4.53@sha256:ccad23e18639c8b98cee17e7100b95830a06077b56d8e5b006d6dcf8ec5e94a0",
+      "platform": "linux/arm64",
+      "verification": "registry_metadata_only",
+      "method": "registry_v2_index_and_child_get_sha256",
+      "metadata_url": "https://registry-1.docker.io/v2/chrislusf/seaweedfs/manifests/4.53",
+      "license": "Apache-2.0 and distribution package licenses"
+    }
+  },
+  "runtime": {
+    "python_series": "3.12",
+    "python_version": "3.12.16",
+    "java_major": 17,
+    "scala_binary": "2.13",
+    "spark_scala_version": "2.13.16",
+    "spark_version": "4.0.3",
+    "delta_version": "4.0.1",
+    "hadoop_version": "3.4.1",
+    "jdk": {
+      "name": "Temurin",
+      "version": "17.0.21+9",
+      "filename": "OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz",
+      "platform": "linux/aarch64",
+      "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.21_9.tar.gz",
+      "digest": "sha256:3e4eca7ead088f080af1476007decf010a240a1eb4e1e78c54fa32fbcc347084",
+      "size_bytes": 192336814,
+      "verification": "publisher_metadata_only",
+      "metadata_url": "https://api.adoptium.net/v3/assets/version/17.0.21%2B9?architecture=aarch64&image_type=jdk&os=linux&vendor=eclipse",
+      "license": "GPL-2.0-with-classpath-exception"
+    }
+  },
+  "sdk_review": {
+    "status": "unresolved_effective_classpath",
+    "accepted": false,
+    "selected_bundle_version": null,
+    "effective_classpath_verified": false,
+    "compatibility_tested": false,
+    "hadoop_managed_bundle_version": "2.24.6",
+    "spark_declared_sdk_v2_version": "2.25.53",
+    "declarations": [
+      {
+        "source_url": "https://raw.githubusercontent.com/apache/spark/v4.0.3/pom.xml",
+        "context": "root properties: hadoop.version=3.4.1; scala.version=2.13.16; scala.binary.version=2.13; aws.java.sdk.v2.version=2.25.53; properties alone do not prove bundled runtime contents"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/apache/spark/v4.0.3/hadoop-cloud/pom.xml",
+        "context": "spark-hadoop-cloud dependencies: hadoop-aws uses ${hadoop.version} with ${hadoop.deps.scope}; direct software.amazon.awssdk:bundle uses ${aws.java.sdk.v2.version}; inclusion/resolution in the eventual PySpark runtime remains unverified"
+      },
+      {
+        "source_url": "https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-project/3.4.1/hadoop-project-3.4.1.pom",
+        "context": "aws-java-sdk-v2.version=2.24.6; dependencyManagement sets software.amazon.awssdk:bundle to this property, with wildcard transitive exclusions"
+      },
+      {
+        "source_url": "https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-aws/3.4.1/hadoop-aws-3.4.1.pom",
+        "context": "compile dependency software.amazon.awssdk:bundle has no local version; Hadoop dependency management supplies 2.24.6"
+      }
+    ],
+    "blocker": "No SDK is selected or approved. Pinned PySpark archive names are inventoried and contain no named SDK or spark-hadoop-cloud JAR. Final assembled runtime additions, effective resolution, duplicates and class loading remain unverified; do not infer them from root properties or combine SDK versions.",
+    "next_evidence": ["final assembled-runtime JAR inventory and effective dependency tree", "single SDK classpath and provenance review", "ARM64 Java/Spark/Delta/S3A authenticated write/read and checkpoint restart"]
+  },
+  "python_artifacts": [
+    {
+      "name": "pyspark",
+      "version": "4.0.3",
+      "filename": "pyspark-4.0.3.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/6e/c1/671a7a00aea800d25fbbfc7d91539b4cf34a995d085ae708f26a2aeaa140/pyspark-4.0.3.tar.gz",
+      "digest": "sha256:9ed23e8601d73afae857eb5f9e11050b59cd11bbe50777564fcc4923cb117c1c",
+      "metadata_url": "https://pypi.org/pypi/pyspark/4.0.3/json",
+      "requires_python": ">=3.9",
+      "applicable_requirements": ["py4j>=0.10.9.7,<0.10.9.10"],
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "delta-spark",
+      "version": "4.0.1",
+      "filename": "delta_spark-4.0.1-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/13/22/a3716bc5ea86786be5f0afd09f62b20e6a111fa2d78868e930b19367a88c/delta_spark-4.0.1-py3-none-any.whl",
+      "digest": "sha256:ae0707eda68f05c6ec20b841c8966bb1201d1a5f124d9e94e8c2232162139be8",
+      "metadata_url": "https://pypi.org/pypi/delta-spark/4.0.1/json",
+      "requires_python": ">=3.9",
+      "applicable_requirements": ["pyspark>=4.0.0", "importlib-metadata>=1.0.0"],
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "py4j",
+      "version": "0.10.9.9",
+      "filename": "py4j-0.10.9.9-py2.py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/bd/db/ea0203e495be491c85af87b66e37acfd3bf756fd985f87e46fc5e3bf022c/py4j-0.10.9.9-py2.py3-none-any.whl",
+      "digest": "sha256:c7c26e4158defb37b0bb124933163641a2ff6e3a3913f7811b0ddbe07ed61533",
+      "metadata_url": "https://pypi.org/pypi/py4j/0.10.9.9/json",
+      "requires_python": null,
+      "applicable_requirements": [],
+      "license": "BSD-3-Clause"
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "8.7.0",
+      "filename": "importlib_metadata-8.7.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl",
+      "digest": "sha256:e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd",
+      "metadata_url": "https://pypi.org/pypi/importlib-metadata/8.7.0/json",
+      "requires_python": ">=3.9",
+      "applicable_requirements": ["zipp>=3.20"],
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "zipp",
+      "version": "3.23.0",
+      "filename": "zipp-3.23.0-py3-none-any.whl",
+      "url": "https://files.pythonhosted.org/packages/2e/54/647ade08bf0db230bfea292f893923872fd20be6ac6f53b2b936ba839d75/zipp-3.23.0-py3-none-any.whl",
+      "digest": "sha256:071652d6115ed432f5ce1d34c336c0adfd6a884660d1e9712a256d3d3bd4b14e",
+      "metadata_url": "https://pypi.org/pypi/zipp/3.23.0/json",
+      "requires_python": ">=3.9",
+      "applicable_requirements": [],
+      "license": "MIT"
+    }
+  ],
+  "archive_inspection": {
+    "artifact": "pyspark-4.0.3.tar.gz",
+    "archive_digest": "sha256:9ed23e8601d73afae857eb5f9e11050b59cd11bbe50777564fcc4923cb117c1c",
+    "archive_size_bytes": 434225451,
+    "status": "archive_inspected_not_executed",
+    "runtime_verification": "not_run",
+    "jar_count": 319,
+    "named_hadoop_jars": ["dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar", "hadoop-client-api-3.4.1.jar", "hadoop-client-runtime-3.4.1.jar", "parquet-hadoop-1.15.2.jar"],
+    "named_sdk_or_spark_hadoop_cloud_jars_present": false,
+    "duplicate_jar_basenames": [],
+    "scope_note": "All JAR names inventoried; only four Hadoop-named JARs inspected for embedded text and standard SDK/S3A class names. No effective classpath, complete shaded-class scan, resolution or execution proof."
+  },
+  "python_resolution": {
+    "target": "CPython 3.12 Linux ARM64, no extras",
+    "verification": "publisher_metadata_with_verified_pyspark_archive_not_installed",
+    "build_requirements": "unresolved; PySpark is an sdist, build tooling must be locked before build",
+    "notes": "Applicable base requirements only; test/docs/SQL/Connect/ML extras excluded. importlib-metadata is required even on Python3.12; 8.7.0 and zipp3.23.0 are bounded older candidate choices, not latest claims."
+  },
+  "maven_artifacts": [
+    {
+      "coordinate": "io.delta:delta-spark_2.13",
+      "version": "4.0.1",
+      "status": "metadata_candidate_not_executed",
+      "url": "https://repo.maven.apache.org/maven2/io/delta/delta-spark_2.13/4.0.1/delta-spark_2.13-4.0.1.jar",
+      "checksum_url": "https://repo.maven.apache.org/maven2/io/delta/delta-spark_2.13/4.0.1/delta-spark_2.13-4.0.1.jar.sha1",
+      "published_sha1": "3e469898dc4ed083c735ae360beb063adcd12e9d",
+      "sha256": null
+    },
+    {
+      "coordinate": "io.delta:delta-storage",
+      "version": "4.0.1",
+      "status": "metadata_candidate_not_executed",
+      "url": "https://repo.maven.apache.org/maven2/io/delta/delta-storage/4.0.1/delta-storage-4.0.1.jar",
+      "checksum_url": "https://repo.maven.apache.org/maven2/io/delta/delta-storage/4.0.1/delta-storage-4.0.1.jar.sha1",
+      "published_sha1": "ebc5384d953c1d70d0ce4ceee42892da74051a81",
+      "sha256": null
+    },
+    {
+      "coordinate": "org.apache.hadoop:hadoop-aws",
+      "version": "3.4.1",
+      "status": "metadata_candidate_not_executed",
+      "url": "https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-aws/3.4.1/hadoop-aws-3.4.1.jar",
+      "checksum_url": "https://repo.maven.apache.org/maven2/org/apache/hadoop/hadoop-aws/3.4.1/hadoop-aws-3.4.1.jar.sha1",
+      "published_sha1": "641d8fe1d7683cdcc05cc3a794c0374553f6bd6a",
+      "sha256": null
+    },
+    {
+      "coordinate": "software.amazon.awssdk:bundle",
+      "version": "2.24.6",
+      "status": "hadoop_managed_metadata_candidate_not_selected",
+      "url": "https://repo.maven.apache.org/maven2/software/amazon/awssdk/bundle/2.24.6/bundle-2.24.6.jar",
+      "checksum_url": "https://repo.maven.apache.org/maven2/software/amazon/awssdk/bundle/2.24.6/bundle-2.24.6.jar.sha1",
+      "published_sha1": "242317b028d951dbbf6a142241e041b684696a3b",
+      "sha256": null
+    }
+  ],
+  "maven_checksum_note": "Publisher SHA1 sidecars observed; SHA256/SHA512 sidecars returned404 for these JARs. No separate Maven JAR downloads/content hashes computed; bundled Hadoop JARs inspected in memory from the verified PySpark archive. SHA1 is metadata evidence, not a strong integrity/provenance guarantee. Full resolved closure and strong content hashes remain pending.",
+  "resources": {
+    "host_architecture": "arm64",
+    "docker_engine": "29.7.2",
+    "compose": "5.5.1",
+    "docker_cpus": 10,
+    "host_check_python": "3.12.15",
+    "host_default_python": "3.15.2",
+    "host_java": "not_available",
+    "docker_allocation_bytes": 8319504384,
+    "limits_mib": {"postgres": 512, "redpanda": 1536, "seaweedfs": 1024, "spark": 3072},
+    "total_limit_bytes": 6442450944,
+    "headroom_bytes": 1877053440,
+    "minimum_headroom_mib": 1536,
+    "baseline_minutes": 30,
+    "measurement_status": "not_run"
+  },
+  "safety": {
+    "max_spark_drivers_per_table_checkpoint": 1,
+    "seaweed_persistent_root": "/data",
+    "seaweed_persisted_state": ["master", "volume", "filer_leveldb"],
+    "transport": "isolated_local_http",
+    "published_bind_address": "127.0.0.1",
+    "dedicated_network": true,
+    "authentication_required": true,
+    "credential_policy": "disposable_local_uncommitted",
+    "unauthenticated_probe_expected": "deny",
+    "transport_policy_status": "owner_approved_for_S01_only",
+    "bootstrap_status": "proposal_pending_implementation_review"
+  }
+}

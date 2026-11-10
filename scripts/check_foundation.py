@@ -59,7 +59,7 @@ def main() -> int:
     outcome = unittest.TextTestRunner(verbosity=2).run(suite)
     if not outcome.wasSuccessful():
         return 1
-    print("Foundation checks passed; no application/integration tests exist yet.")
+    print("Offline foundation/plan checks passed; runtime/integration probes NOT RUN.")
     return 0
 
 
